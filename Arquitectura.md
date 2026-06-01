@@ -4,22 +4,20 @@ Estilo adoptado: Arquitectura en Capas (Layered Architecture)
 
 Justificación basada en REF priorizados: 
 
-| REF ID | Descripción                              | Prioridad | Cómo lo aborda el estilo      | 
-|--------|------------------------------------------|-----------|-------------------------------| 
-| REF-01 | El sistema debe responder en menos de 2 seg | Alta      | El tiempo de demora entre capas no debe superar los 2 seg, para garantizar fluidez en el juego | 
-| REF-02 | los juegos no presentan problemas tecnicos  | Alta      | El estilo nos permite verificar los posibles problemas tecnicos desglozados| 
-| REF-03 | El producto recibe actualizaciones constantes | Alta      | Al ser de capas es mas facil subir actualizaciones sin interferir en las demas capas| 
+| ID     | Tipo                         | Descripción                                                                         | Prioridad | Cómo lo aborda el estilo                                                                           | 
+|--------|------------------------------|-------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------|
+| REF-01 | Eficiencia                   | El sistema debe responder a las solicitudes en menos de 2 segundos.                 | Alta      | La separación por capas logra una mejor organización y permite respuestas más rapidas.             |
+| REF-02 | Seguridad                    | Autenticación para acciones de usuario.                                             | Alta      | La arquitectura permite ubicar las validaciones en una capa antes de acceder a los datos.          |
+| REF-05 | Mantenibilidad               | El codigo debe estar ordenado para facilitar su mantencion.                         | Alta      | Permite modificar una parte del sistema sin afectar directamente a las demás.                      |
+| REF-07 | Integridad de datos          | El sistema debe evitar datos duplicados.                                            | Alta      | centraliza las reglas y validaciones en una capa antes de guardar información en la capa de datos. |
+| REF-08 | Testabilidad                 | Las funcionalidades implementadas deben contar con casos de prueba.                 | Alta      | Es más fácil diseñar y ejecutar pruebas específicas.                                               |
 
+**Explicación textual**:
+Se escogió una arquitectura en capas porque el sistema corresponde a una plataforma de videojuegos que debe gestionar usuarios, catálogo de juegos, biblioteca personal, compras o adquisiciones, reseñas, feedback y soporte técnico.
 
+Este estilo permite dividir el sistema en partes claras: una capa de presentación o cliente que interactúa con el usuario, una capa de API que recibe las solicitudes HTTP, una capa de lógica de negocio que valida las reglas del sistema, y una capa de datos que almacena la información principal.
 
-Explicación textual: Se escogio el estilo de 3 capas ya que permite dividir el motor del juego 
-(main menu, HUD y configuracion) de la logica del juego (reglas del sigilo, deteccion, timing, IA, control del jugador)
-y de la capa de datos ( datos del usuario, guardado de partidas, configuracion personalizada)
-
-Este estilo es bastante util al desarrollarlo, Como es un juego basado en el desafío técnico, si quieres cambiar cómo funciona la "visión" o el
-"hitbox", solo modificas la capa de lógica sin romper el sistema de guardado o la interfaz.
-
-
+La arquitectura en capas es adecuada para este proyecto porque facilita la mantención, la incorporación de nuevas funcionalidades y la realización de pruebas. Por ejemplo, si se necesita modificar la forma en que se valida una compra, solo se cambia la lógica de negocio correspondiente, sin afectar directamente la estructura de datos ni las rutas de la API.
 
 ## 2. Diagrama de Arquitectura 
 
