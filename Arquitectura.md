@@ -21,7 +21,35 @@ La arquitectura en capas es adecuada para este proyecto porque facilita la mante
 
 ## 2. Diagrama de Arquitectura 
 
-![Diagrama](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/Diagrama.png)
+```mermaid
+flowchart TD
+
+    A[Usuario / Cliente Web] --> B[Capa de API / Rutas HTTP]
+
+    B --> C[Controladores]
+
+    C --> D[Capa de Servicios / Lógica de Negocio]
+
+    D --> E[Capa de Datos]
+
+    E --> F[(Base de Datos / Archivo de Datos)]
+
+    subgraph API[Rutas principales de la API]
+        B1[Usuarios]
+        B2[Juegos / Catálogo]
+        B3[Compras / Biblioteca]
+        B4[Reseñas]
+        B5[Feedback]
+        B6[Soporte Técnico]
+    end
+
+    B --> B1
+    B --> B2
+    B --> B3
+    B --> B4
+    B --> B5
+    B --> B6
+```
 
 ## 3. Descomposición Modular 
 
