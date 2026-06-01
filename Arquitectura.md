@@ -1,6 +1,6 @@
 ## 1. Estilo Arquitectónico 
 
-Estilo adoptado: Capas (layered)
+Estilo adoptado: Arquitectura en Capas (Layered Architecture)
 
 Justificación basada en REF priorizados: 
 
@@ -9,6 +9,7 @@ Justificación basada en REF priorizados:
 | REF-01 | El sistema debe responder en menos de 2 seg | Alta      | El tiempo de demora entre capas no debe superar los 2 seg, para garantizar fluidez en el juego | 
 | REF-02 | los juegos no presentan problemas tecnicos  | Alta      | El estilo nos permite verificar los posibles problemas tecnicos desglozados| 
 | REF-03 | El producto recibe actualizaciones constantes | Alta      | Al ser de capas es mas facil subir actualizaciones sin interferir en las demas capas| 
+
 
 
 Explicación textual: Se escogio el estilo de 3 capas ya que permite dividir el motor del juego 
