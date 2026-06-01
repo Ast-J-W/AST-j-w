@@ -8,16 +8,16 @@ El proyecto consiste en el diseño y desarrollo de una plataforma de videojuegos
 
 | ID   | Nombre                          | Issue  | 
 |------|---------------------------------|--------| 
-| US-01 | Tutorial didáctico             | [#1](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/1)   | 
-| US-02 | Sistema de compras             | [#2](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/2)   |
-| US-03 | Lista de conexiones y estado   | [#3](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/3)   |  
-| US-04 | Configuración de accesibilidad | [#4](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/4)   |  
-| US-05 | Registro de actividad          | [#5](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/5)   |  
-| US-06 | Ver logros                     | [#6](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/6)   |  
-| US-07 | Evitar pérdida de progreso     | [#7](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/7)   |  
-| US-08 | Precisión de hitboxes          | [#8](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/8)   |
-| US-09 | Visualizar intento previo      | [#9](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/9)   |  
-| US-10 | Contador de intentos           | [#10](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/10) |  
+| US-01 | Registro de usuario                | [#1](https://github.com/Ast-J-W/AST-j-w/issues/4)   | 
+| US-02 | Inicio de sesión                   | [#2](https://github.com/Ast-J-W/AST-j-w/issues/5)   |
+| US-03 | Visualización del catálogo         | [#3](https://github.com/Ast-J-W/AST-j-w/issues/6)   |  
+| US-04 | Búsqueda y filtrado de videojuegos | [#4](https://github.com/Ast-J-W/AST-j-w/issues/7)   |  
+| US-05 | Compra/adquisición de videojuegos  | [#5](https://github.com/Ast-J-W/AST-j-w/issues/8)   |  
+| US-06 | Biblioteca personal                | [#6](https://github.com/Ast-J-W/AST-j-w/issues/9)   |  
+| US-07 | Registro de actividad de juego     | [#7](https://github.com/Ast-J-W/AST-j-w/issues/10)  |  
+| US-08 | Publicación de reseñas             | [#8](https://github.com/Ast-J-W/AST-j-w/issues/11)  |
+| US-09 | Feedback sobre videojuegos         | [#9](https://github.com/Ast-J-W/AST-j-w/issues/12)  |  
+| US-10 | Soporte técnico                    | [#10](https://github.com/Ast-J-W/AST-j-w/issues/13) |  
 
 ## Requisitos Extrafuncionales
 
