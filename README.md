@@ -21,7 +21,7 @@ El proyecto consiste en el diseño y desarrollo de una plataforma de videojuegos
 
 ## Requisitos Extrafuncionales
 
-Ver [ReqExtrafuncionales.md](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/ReqExtrafuncionales.md)
+Ver [ReqExtrafuncionales.md](https://github.com/Ast-J-W/AST-j-w/blob/main/ReqExtrafuncionales.md)
 
 ## Entidades del Dominio
 ```mermaid
