@@ -26,75 +26,83 @@ Ver [ReqExtrafuncionales.md](https://github.com/Ast-J-W/AST-j-w/blob/main/ReqExt
 ## Entidades del Dominio
 ```mermaid
 classDiagram
-direction LR
 
-class MainMenu {
-  +_on_play_button_pressed()
-  +_on_exit_button_pressed()
+class Desarrollador {
+    +int id_desarrollador
+    +string nom_desarrollador
+    +string pais
+    +string correo_contacto
 }
 
-class GameScene {
+class Juego {
+    +int id_juego
+    +string titulo
+    +decimal precio
+    +string genero
+    +date f_lanzamiento
 }
 
-class Player {
-  +speed: float
-  +velocity: Vector2
-  +direction: Vector2
-  +_physics_process()
+class Usuario {
+    +int id_usuario
+    +string nombre
+    +string apellido
+    +string nombre_completo
+    +date f_nacimiento
+    +int edad
 }
 
-class Enemy {
-  +speed: float
-  +waypoints: Array
-  +angle: float
-  +length: float
-  +direction: Vector2
-  +current_index: int
-  +game_over_triggered: bool
-  +_physics_process()
-  +is_in_cone()
-  +has_line_of_sight()
-  +_on_timer_timeout()
+class Correo {
+    +string correo
 }
 
-class Goal {
-  +activated: bool
-  +next_scene: String
-  +_on_body_entered()
-  +_go_to_next_scene()
+class Cuenta {
+    +int id_cuenta
+    +string nombre_usuario
+    +date f_creacion
+    +string estado_cuenta
 }
 
-class GameOver {
-  +_on_menu_pressed()
-  +_on_try_again_pressed()
+class CuentaBase {
+    +boolean publicidad
+    +int limite_amigos
+    +boolean soporte_basico
 }
 
-class DemoCompleted {
-  +_on_button_pressed()
-  +_on_play_again_pressed()
+class CuentaPlus {
+    +decimal descuento
+    +date f_suscripcion
+    +date f_fin_suscripcion
+    +boolean acceso_comunidad
 }
 
-MainMenu --> GameScene : load
-GameScene --> Player : contains
-GameScene --> Enemy : contains
-GameScene --> Goal : contains
-Enemy --> Player : detect
-Enemy --> GameOver : change_scene
-Goal --> Player : detect
-Goal --> DemoCompleted : change_scene
-GameOver --> MainMenu : menu
-GameOver --> GameScene : retry
-DemoCompleted --> MainMenu : menu
-DemoCompleted --> GameScene : play_again
+class Biblioteca {
+    +date f_adquisicion
+    +string estado_instalacion
+    +int horas_jugadas
+}
+
+class Reseña {
+    +int nro_resena
+    +int f_resena
+    +int calificacion
+    +string comentario
+}
+
+Desarrollador "1" --> "0..*" Juego : publica
+
+Usuario "1" --> "1" Cuenta : posee
+
+Cuenta <|-- CuentaBase
+Cuenta <|-- CuentaPlus
+
+Usuario "1" --> "0..*" Correo : tiene
+
+Usuario "1" --> "0..*" Biblioteca : posee
+Juego "1" --> "0..*" Biblioteca : pertenece a
+
+Juego "1" --> "0..*" Reseña : recibe
+Usuario "1" --> "0..*" Reseña : escribe
 ```
-
-## Mockups
-
-| Mockup | Historia de usuario relacionada | 
-|--------|----------------------------------| 
-| [Prototipo en Figma](https://www.figma.com/design/bwICFC1WD77lRQX0Z2WnyY/Splinter-Gear-Liquid-X?node-id=0-1&p=f&t=U9F0MKpkNRh91lEm-0) | US-01 al US-10 |
-
-Ver [Archivo ZIP del juego](https://drive.google.com/file/d/1vOnuNOZdk9rHsPeoO6IZqY0eES7on1QN/view)
 
 ## Diseño Arquitectónico
 
