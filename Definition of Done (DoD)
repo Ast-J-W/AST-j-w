@@ -1,0 +1,10 @@
+La historia tiene criterios de aceptación claros y testeables.
+La historia fue revisada y ajustada con el feedback recibido.
+El issue está actualizado con la descripción, CAs y observaciones necesarias.
+Se validan los datos obligatorios y los escenarios de error definidos.
+Se implementa la funcionalidad correspondiente según el alcance de la HU.
+Se agregan pruebas para escenarios exitosos, alternativos y de error.
+El desarrollo se realiza en una rama propia.
+Se crea Pull Request asociado al issue.
+El código es revisado antes de integrarse.
+La funcionalidad queda integrada en la rama principal.
