@@ -106,7 +106,7 @@ Usuario "1" --> "0..*" Reseña : escribe
 
 ## Diseño Arquitectónico
 
-Ver [Arquitectura.md](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/Arquitectura.md)
+Ver [Arquitectura.md](https://github.com/Ast-J-W/AST-j-w/blob/main/Arquitectura.md)
 
 ## Responsabilidades del equipo 
 
