@@ -1,10 +1,19 @@
 info:
   name: PUT - Editar juego existente
   type: http
+  seq: 1
 
 http:
   method: PUT
   url: http://localhost:3000/juegos/1
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "Elden Ring Deluxe",
+        "genero": "RPG",
+        "precio": 45990
+      }
   auth: inherit
 
 settings:

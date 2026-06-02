@@ -185,3 +185,4 @@ Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó 
 |------------|-----|----------------------------| 
 | Martín Loyola | Product Owner | 1.1 Mejora de historia de usuarios con clarita review | 
 | Jesús Carvajal | Scrum Master  | 2.1 Desarrollo de un HU en backend (APIs) |
+

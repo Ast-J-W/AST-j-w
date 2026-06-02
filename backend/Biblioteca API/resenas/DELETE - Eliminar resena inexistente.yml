@@ -1,10 +1,14 @@
 info:
   name: DELETE - Eliminar resena inexistente
   type: http
+  seq: 1
 
 http:
   method: DELETE
   url: http://localhost:3000/resenas/9999
+  body:
+    type: json
+    data: ""
   auth: inherit
 
 settings:

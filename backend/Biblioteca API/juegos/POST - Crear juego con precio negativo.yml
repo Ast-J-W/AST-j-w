@@ -1,10 +1,19 @@
 info:
   name: POST - Crear juego con precio negativo
   type: http
+  seq: 1
 
 http:
   method: POST
   url: http://localhost:3000/juegos
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "Concord",
+        "genero": "Shotter",
+        "precio": -1000
+      }
   auth: inherit
 
 settings:
