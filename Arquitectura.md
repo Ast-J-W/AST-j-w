@@ -56,36 +56,11 @@ La plataforma se organiza en módulos funcionales que representan las principale
 
 Esta descomposición permite relacionar las funcionalidades del sistema con los requisitos extrafuncionales priorizados, especialmente la organización del backend, la validación de identidad, el control de duplicados, el rendimiento esperado y la facilidad para realizar pruebas.
 
-## 3.1 Módulo de Usuarios
-
-El módulo de Usuarios gestiona el registro, inicio de sesión e identificación de los usuarios dentro de la plataforma.
-
-Este módulo permite que un visitante cree una cuenta y que un usuario registrado pueda iniciar sesión para acceder a funcionalidades restringidas del sistema.
-
-## 3.2 Módulo de Juegos / Catálogo
-
-El módulo de Juegos / Catálogo permite consultar los videojuegos disponibles en la plataforma y visualizar su información principal.
-
-Este módulo representa una parte central del sistema, ya que permite a visitantes y usuarios registrados conocer los títulos ofrecidos antes de adquirirlos.
-
-## 3.3 Módulo de Compras / Biblioteca
-
-El módulo de Compras / Biblioteca gestiona la adquisición de videojuegos y la consulta de los juegos asociados a cada usuario registrado.
-
-Este módulo conecta el catálogo con la experiencia personal del usuario, ya que permite que los videojuegos adquiridos se agreguen a una biblioteca personal.
-## 3.4 Módulo de Reseñas
-
-El módulo de Reseñas permite que los usuarios registrados publiquen comentarios y calificaciones sobre videojuegos.
-
-Este módulo fortalece la participación de la comunidad, ya que permite compartir opiniones públicas sobre los títulos disponibles en la plataforma.
-
-## 3.5 Módulo de Feedback
-
-El módulo de Feedback permite que los usuarios registrados envíen sugerencias o comentarios orientados a mejorar los videojuegos disponibles, el catálogo o la experiencia general de la plataforma.
-
-A diferencia de las reseñas, el feedback no se enfoca necesariamente en una opinión pública, sino en recopilar información útil para la evolución del sistema y del catálogo.
-## 3.6 Módulo de Soporte Técnico
-
-El módulo de Soporte Técnico permite que los usuarios registrados creen y consulten solicitudes de soporte relacionadas con su cuenta, biblioteca, compras o funcionamiento general de la plataforma.
-
-Este módulo responde a la necesidad de brindar atención a problemas reportados por los usuarios y mantener una experiencia de uso más confiable.
+|   Modulos  |                                                                  |
+|------------|------------------------------------------------------------------|
+| Módulo de Usuarios | El módulo de Usuarios gestiona el registro, inicio de sesión e identificación de los usuarios dentro de la plataforma. Este módulo permite que un visitante cree una cuenta y que un usuario registrado pueda iniciar sesión para acceder a funcionalidades restringidas del sistema.|
+| Módulo de Juegos / Catálogo | El módulo de Juegos / Catálogo permite consultar los videojuegos disponibles en la plataforma y visualizar su información principal. Este módulo representa una parte central del sistema, ya que permite a visitantes y usuarios registrados conocer los títulos ofrecidos antes de adquirirlos. |
+| Módulo de Compras / Biblioteca | El módulo de Compras / Biblioteca gestiona la adquisición de videojuegos y la consulta de los juegos asociados a cada usuario registrado. Este módulo conecta el catálogo con la experiencia personal del usuario, ya que permite que los videojuegos adquiridos se agreguen a una biblioteca personal.|
+| Módulo de Reseñas | El módulo de Reseñas permite que los usuarios registrados publiquen comentarios y calificaciones sobre videojuegos. Este módulo fortalece la participación de la comunidad, ya que permite compartir opiniones públicas sobre los títulos disponibles en la plataforma.|
+| Módulo de Feedback | El módulo de Feedback permite que los usuarios registrados envíen sugerencias o comentarios orientados a mejorar los videojuegos disponibles, el catálogo o la experiencia general de la plataforma. A diferencia de las reseñas, el feedback no se enfoca necesariamente en una opinión pública, sino en recopilar información útil para la evolución del sistema y del catálogo. |
+| Módulo de Soporte Técnico | El módulo de Soporte Técnico permite que los usuarios registrados creen y consulten solicitudes de soporte relacionadas con su cuenta, biblioteca, compras o funcionamiento general de la plataforma. Este módulo responde a la necesidad de brindar atención a problemas reportados por los usuarios y mantener una experiencia de uso más confiable. |
