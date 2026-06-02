@@ -112,5 +112,5 @@ Ver [Arquitectura.md](https://github.com/Ast-J-W/AST-j-w/blob/main/Arquitectura.
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| Martín Loyola | Product Owner | 1.1 Mejora dehistoria de usuarios con clarita review | 
+| Martín Loyola | Product Owner | 1.1 Mejora de historia de usuarios con clarita review | 
 | Jesús Carvajal | Scrum Master  | 2.1 Desarrollo de un HU en backend (APIs) |
