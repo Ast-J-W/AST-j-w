@@ -1,0 +1,22 @@
+info:
+  name: POST - Crear juego sin genero.
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/juegos
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "Dark souls II",
+        "precio": 25499
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

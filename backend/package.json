@@ -1,0 +1,13 @@
+{
+  "name": "biblioteca-videojuegos-api",
+  "version": "1.0.0",
+  "description": "API backend para juegos y resenas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0"
+  }
+}

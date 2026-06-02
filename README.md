@@ -108,9 +108,81 @@ Usuario "1" --> "0..*" Reseña : escribe
 
 Ver [Arquitectura.md](https://github.com/Ast-J-W/AST-j-w/blob/main/Arquitectura.md)
 
+# Biblioteca de Videojuegos API
+
+API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y reseñas.
+## Tecnologías utilizadas
+- Node.js
+- Express
+- better-sqlite3
+- Bruno (Debido a una dificultad con el problema Thunder Client)
+
+## Instalación
+1. Clonar el repositorio.
+2. Abrir la carpeta del proyecto.
+3. Ejecutar:
+
+```bash
+npm install
+```
+
+## Ejecución
+Para iniciar el servidor:
+
+```bash
+node index.js
+```
+
+También se puede usar:
+
+```bash
+npm start
+```
+
+## Endpoints disponibles
+
+## Ruta base
+- `GET /`
+
+### Juegos
+- `GET /juegos`
+- `POST /juegos`
+- `PUT /juegos/:id`
+- `DELETE /juegos/:id`
+
+### Reseñas
+- `GET /resenas`
+- `POST /resenas`
+- `PUT /resenas/:id`
+- `DELETE /resenas/:id`
+
+## Ejemplo de body para crear un juego
+```json
+{
+  "titulo": "Elden Ring",
+  "genero": "RPG",
+  "precio": 39990
+}
+```
+
+## Ejemplo de body para crear una reseña
+```json
+{
+  "juego_id": 1,
+  "autor": "Jesus",
+  "calificacion": 5,
+  "comentario": "Muy buen juego"
+}
+```
+
+## Pruebas
+Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó guardada junto al proyecto.
+
+
 ## Responsabilidades del equipo 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
 | Martín Loyola | Product Owner | 1.1 Mejora de historia de usuarios con clarita review | 
 | Jesús Carvajal | Scrum Master  | 2.1 Desarrollo de un HU en backend (APIs) |
+

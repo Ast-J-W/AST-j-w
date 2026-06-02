@@ -1,0 +1,24 @@
+info:
+  name: POST - Crear resena con calificacion 6
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/resenas
+  body:
+    type: json
+    data: |-
+      {
+        "juego_id": 1,
+        "autor": "Jesus",
+        "calificacion": 6,
+        "comentario": "Prueba invalida"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
