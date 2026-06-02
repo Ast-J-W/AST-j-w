@@ -1,6 +1,3 @@
-## 1. Definition of done
-
-
 |                   Defition of Done (general)                                  |
 |-------------------------------------------------------------------------------|
 | La historia tiene criterios de aceptación claros y testeables.                |
