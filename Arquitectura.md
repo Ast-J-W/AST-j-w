@@ -52,35 +52,40 @@ flowchart TD
 ```
 
 ## 3. Descomposición Modular 
+La plataforma se organiza en módulos funcionales que representan las principales capacidades del sistema y mantienen coherencia con las rutas principales de la API definidas en el diagrama de arquitectura. Cada módulo se implementa siguiendo la arquitectura en capas: rutas HTTP, controladores, servicios o lógica de negocio y capa de datos.
 
-**Capa de Presentación**
+Esta descomposición permite relacionar las funcionalidades del sistema con los requisitos extrafuncionales priorizados, especialmente la organización del backend, la validación de identidad, el control de duplicados, el rendimiento esperado y la facilidad para realizar pruebas.
 
-La capa de presentación corresponde a la parte del sistema con la que el usuario interactúa directamente. Su función principal es mostrar información al jugador y permitir la interacción con el sistema.
+## 3.1 Módulo de Usuarios
 
-Dentro de esta capa se incluyen los siguientes módulos:
+El módulo de Usuarios gestiona el registro, inicio de sesión e identificación de los usuarios dentro de la plataforma.
 
-- Menú principal: Es la interfaz inicial del juego, donde el usuario puede comenzar una partida, cargar un juego previamente guardado o acceder a otras opciones.
-- HUD (Head-Up Display): Corresponde a la interfaz visible durante el juego, donde se muestra información relevante como la vida del personaje, puntaje, mapa, inventario, entre otros elementos.
-- Configuración: Permite al usuario modificar opciones del juego, como el sonido, los gráficos o los controles.
+Este módulo permite que un visitante cree una cuenta y que un usuario registrado pueda iniciar sesión para acceder a funcionalidades restringidas del sistema.
 
-**Capa de Lógica del Juego**
+## 3.2 Módulo de Juegos / Catálogo
 
-La capa de lógica del juego es el núcleo del sistema, ya que se encarga de procesar todas las reglas, comportamientos y mecánicas del videojuego.
+El módulo de Juegos / Catálogo permite consultar los videojuegos disponibles en la plataforma y visualizar su información principal.
 
-Los módulos que la componen son:
+Este módulo representa una parte central del sistema, ya que permite a visitantes y usuarios registrados conocer los títulos ofrecidos antes de adquirirlos.
 
-- Control del jugador: Gestiona las acciones del jugador, como moverse, saltar, atacar o interactuar con el entorno.
-- IA de enemigos: Define el comportamiento de los enemigos dentro del juego, incluyendo sus movimientos, decisiones y reacciones frente al jugador.
-- Sistema de sigilo (detección, visión): Se encarga de determinar si el jugador es detectado por los enemigos, considerando factores como la distancia, el campo de visión.
+## 3.3 Módulo de Compras / Biblioteca
 
-**Capa de Datos**
+El módulo de Compras / Biblioteca gestiona la adquisición de videojuegos y la consulta de los juegos asociados a cada usuario registrado.
 
-La capa de datos tiene como función almacenar y gestionar la información necesaria para el funcionamiento del sistema. Esta información puede ser utilizada tanto por la capa de presentación como por la capa de lógica.
+Este módulo conecta el catálogo con la experiencia personal del usuario, ya que permite que los videojuegos adquiridos se agreguen a una biblioteca personal.
+## 3.4 Módulo de Reseñas
 
-Incluye los siguientes módulos:
+El módulo de Reseñas permite que los usuarios registrados publiquen comentarios y calificaciones sobre videojuegos.
 
-- Configuración: Guarda las preferencias del usuario, como ajustes de audio, video y controles.
-- Guardado de partidas: Permite almacenar el progreso del jugador, incluyendo niveles completados y estado del personaje.
-- Datos de usuario: Contiene información del perfil del jugador, como nombre, estadísticas o historial de juego.
- 
- 
+Este módulo fortalece la participación de la comunidad, ya que permite compartir opiniones públicas sobre los títulos disponibles en la plataforma.
+
+## 3.5 Módulo de Feedback
+
+El módulo de Feedback permite que los usuarios registrados envíen sugerencias o comentarios orientados a mejorar los videojuegos disponibles, el catálogo o la experiencia general de la plataforma.
+
+A diferencia de las reseñas, el feedback no se enfoca necesariamente en una opinión pública, sino en recopilar información útil para la evolución del sistema y del catálogo.
+## 3.6 Módulo de Soporte Técnico
+
+El módulo de Soporte Técnico permite que los usuarios registrados creen y consulten solicitudes de soporte relacionadas con su cuenta, biblioteca, compras o funcionamiento general de la plataforma.
+
+Este módulo responde a la necesidad de brindar atención a problemas reportados por los usuarios y mantener una experiencia de uso más confiable.
