@@ -109,8 +109,10 @@ Usuario "1" --> "0..*" Reseña : escribe
 Ver [Arquitectura.md](https://github.com/Ast-J-W/AST-j-w/blob/main/Arquitectura.md)
 
 # Biblioteca de Videojuegos API
-
 API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y reseñas.
+
+## Historia de usuario implementada 
+- US-08 (Publicacion de reseña)
 ## Tecnologías utilizadas
 - Node.js
 - Express
@@ -192,11 +194,13 @@ El servidor quedará disponible en: http://localhost:3000
 ## Pruebas
 Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó guardada junto al proyecto.
 
+#Evidencia de GitHub workflow
+El desarrollo se trabajo mediante una rama de trabajo llamada `US-08-resenas`, una rama de pruebas llamada `feature/pruebas-api` y Pull Requests que al finalizar fueron integradas a la rama `main`.
 
 ## Responsabilidades del equipo 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| Martín Loyola | Product Owner | 1.1 Mejora de historia de usuarios con clarita review | 
-| Jesús Carvajal | Scrum Master  | 2.1 Desarrollo de un HU en backend (APIs) |
+| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow | 
+| Jesús Carvajal | Scrum Master  |  |
 
