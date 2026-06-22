@@ -132,7 +132,7 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 | Diagrama de estados | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-estados.md) |
 | Diagrama de secuencia | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-secuencia.md) |
 | Diagrama de componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-componentes.md) |
-| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-despliegue.md) |
+| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama_despliegue) |
 
 ## Instrucciones de instalación y ejecución
 
