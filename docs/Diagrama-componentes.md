@@ -1,6 +1,6 @@
 # Diagrama de Componentes
 
-```mermaid
+```mermaid id="u0digq"
 flowchart LR
     C[Cliente API<br/>Bruno / Navegador]
 
@@ -10,10 +10,10 @@ flowchart LR
         RR[Componente Rutas Reseñas<br/>/resenas]
         VJ[Validaciones Juegos<br/>campos obligatorios y precio]
         VR[Validaciones Reseñas<br/>campos, calificación, juego existente y duplicados]
-        DBJS[Acceso a Datos<br/>db.js]
+        DBJS[Acceso a Datos<br/>db.js<br/>conexión y creación de tablas]
     end
 
-    D[(SQLite<br/>datos.db)]
+    D[(SQLite<br/>datos.db<br/>CHECK, UNIQUE y FOREIGN KEY)]
 
     C -->|Interfaz HTTP / JSON| API
     API --> RJ
