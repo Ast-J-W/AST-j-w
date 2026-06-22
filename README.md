@@ -113,11 +113,26 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 
 ## Historia de usuario implementada 
 - US-08 (Publicacion de reseña)
+
 ## Tecnologías utilizadas
 - Node.js
 - Express
 - better-sqlite3
 - Bruno (Debido a una dificultad con el problema Thunder Client)
+
+## Artefactos del proyecto
+
+| Artefacto | Ubicación |
+|---|---|
+| Especificación de HU | ./EspecificacionHU.md |
+| Casos de prueba | ./CasosDePrueba.md |
+| Deuda técnica / code smells | ./DeudaTecnica.md |
+| Modelo de dominio | ./docs/modelo-dominio.md |
+| Diagrama de casos de uso | ./docs/casos-uso.md |
+| Diagrama de estados | ./docs/diagrama-estados.md |
+| Diagrama de secuencia | ./docs/diagrama-secuencia.md |
+| Diagrama de componentes | ./docs/diagrama-componentes.md |
+| Diagrama de despliegue y componentes | ./docs/despliegue-componentes.md |
 
 ## Instrucciones de instalación y ejecución
 
@@ -216,6 +231,6 @@ Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow, 2.2 Diagrama de caso de uso, 2.3 Especificacion de HU | 
-| Jesús Carvajal | Scrum Master  | 2.4 Diagrama de estados, 3.2 Diagrama de componentes, 3.3 Diagrama de secuencia, 4.1 Casos de prueba, 5.1 Deuda tecnica / Code smells |
+| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow, 2.1 Modelo de dominio, 2.2 Diagrama de caso de uso, 2.3 Especificacion de HU | 
+| Jesús Carvajal | Scrum Master  | 2.4 Diagrama de estados, 3.1 Despliegue y componentes, 3.2 Diagrama de componentes, 3.3 Diagrama de secuencia, 4.1 Casos de prueba, 5.1 Deuda tecnica / Code smells |
 
