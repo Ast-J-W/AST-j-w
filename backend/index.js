@@ -60,6 +60,10 @@ app.put('/juegos/:id', (req, res) => {
       return res.status(400).json({ error: 'Faltan campos obligatorios' });
     }
 
+    if (precio < 0) {
+      return res.status(400).json({ error: 'El precio no puede ser negativo' });
+    }
+
     const info = db
       .prepare('UPDATE juegos SET titulo = ?, genero = ?, precio = ? WHERE id = ?')
       .run(titulo, genero, precio, req.params.id);
@@ -122,6 +126,16 @@ app.post('/resenas', (req, res) => {
       return res.status(404).json({ error: 'El juego asociado no existe' });
     }
 
+    const resenaExistente = db
+      .prepare('SELECT * FROM resenas WHERE juego_id = ? AND autor = ?')
+      .get(juego_id, autor);
+
+    if (resenaExistente) {
+      return res.status(409).json({
+        error: 'El usuario ya publicó una reseña para este juego'
+      });
+    }
+
     const result = db
       .prepare('INSERT INTO resenas (juego_id, autor, calificacion, comentario) VALUES (?, ?, ?, ?)')
       .run(juego_id, autor, calificacion, comentario);
@@ -155,6 +169,16 @@ app.put('/resenas/:id', (req, res) => {
 
     if (!juego) {
       return res.status(404).json({ error: 'El juego asociado no existe' });
+    }
+
+    const resenaDuplicada = db
+      .prepare('SELECT * FROM resenas WHERE juego_id = ? AND autor = ? AND id != ?')
+      .get(juego_id, autor, req.params.id);
+
+    if (resenaDuplicada) {
+      return res.status(409).json({
+        error: 'Ya existe otra reseña de este autor para el mismo juego'
+      });
     }
 
     const info = db
