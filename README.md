@@ -216,6 +216,6 @@ Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow | 
-| Jesús Carvajal | Scrum Master  |  |
+| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow, 2.2 Diagrama de caso de uso, 2.3 Especificacion de HU | 
+| Jesús Carvajal | Scrum Master  | 2.4 Diagrama de estados, 3.2 Diagrama de componentes, 3.3 Diagrama de secuencia, 4.1 Casos de prueba, 5.1 Deuda tecnica / Code smells |
 
