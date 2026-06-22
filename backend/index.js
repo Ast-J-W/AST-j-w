@@ -2,6 +2,7 @@ const express = require('express');
 const db = require('./db');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -121,7 +122,6 @@ app.post('/resenas', (req, res) => {
     }
 
     const juego = db.prepare('SELECT * FROM juegos WHERE id = ?').get(juego_id);
-
     if (!juego) {
       return res.status(404).json({ error: 'El juego asociado no existe' });
     }
@@ -131,9 +131,7 @@ app.post('/resenas', (req, res) => {
       .get(juego_id, autor);
 
     if (resenaExistente) {
-      return res.status(409).json({
-        error: 'El usuario ya publicó una reseña para este juego'
-      });
+      return res.status(409).json({ error: 'El usuario ya publicó una reseña para este juego' });
     }
 
     const result = db
@@ -166,7 +164,6 @@ app.put('/resenas/:id', (req, res) => {
     }
 
     const juego = db.prepare('SELECT * FROM juegos WHERE id = ?').get(juego_id);
-
     if (!juego) {
       return res.status(404).json({ error: 'El juego asociado no existe' });
     }
@@ -176,9 +173,7 @@ app.put('/resenas/:id', (req, res) => {
       .get(juego_id, autor, req.params.id);
 
     if (resenaDuplicada) {
-      return res.status(409).json({
-        error: 'Ya existe otra reseña de este autor para el mismo juego'
-      });
+      return res.status(409).json({ error: 'Ya existe otra reseña de este autor para el mismo juego' });
     }
 
     const info = db
@@ -211,6 +206,6 @@ app.delete('/resenas/:id', (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('API corriendo en http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`API corriendo en http://localhost:${PORT}`);
 });
