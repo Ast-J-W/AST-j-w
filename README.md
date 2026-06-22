@@ -127,12 +127,12 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 | Especificación de HU | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
 | Casos de prueba | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/CasosDePrueba.md) |
 | Deuda técnica / code smells | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/DeudaTecnica.md) |
-| Modelo de dominio | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
-| Diagrama de casos de uso | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
-| Diagrama de estados | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
-| Diagrama de secuencia | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
-| Diagrama de componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
-| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/EspecificacionHU.md) |
+| Modelo de dominio | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Modelo_dominio.md) |
+| Diagrama de casos de uso | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-casos-uso.md) |
+| Diagrama de estados | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-estados.md) |
+| Diagrama de secuencia | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-secuencia.md) |
+| Diagrama de componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-componentes.md) |
+| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-despliegue.md) |
 
 ## Instrucciones de instalación y ejecución
 
