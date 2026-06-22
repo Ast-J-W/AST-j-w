@@ -195,7 +195,13 @@ El servidor quedará disponible en: http://localhost:3000
 Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó guardada junto al proyecto.
 
 #Evidencia de GitHub workflow
-El desarrollo se trabajo mediante una rama de trabajo llamada `US-08-resenas`, una rama de pruebas llamada `feature/pruebas-api` y Pull Requests que al finalizar fueron integradas a la rama `main`.
+| Elemento | Evidencia |
+|------------|-----------|
+| Rama principal | main |
+| Rama de desarrollo | US-08-resenas |
+| Rama de pruebas | feature/pruebas-api |
+| Pull Requests | Cambios integrados mediante Pull Requests |
+| Integración final | La versión evaluable se encuentra en la rama main 
 
 ## Responsabilidades del equipo 
 
