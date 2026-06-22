@@ -132,7 +132,7 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 | Diagrama de estados | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-estados.md) |
 | Diagrama de secuencia | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-secuencia.md) |
 | Diagrama de componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama-componentes.md) |
-| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama_despliegue) |
+| Diagrama de despliegue y componentes | [Link](https://github.com/Ast-J-W/AST-j-w/blob/main/docs/Diagrama_despliegue.md) |
 
 ## Instrucciones de instalación y ejecución
 
@@ -231,6 +231,6 @@ Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| Martín Loyola | Product Owner | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow, 2.1 Modelo de dominio, 2.2 Diagrama de caso de uso, 2.3 Especificacion de HU | 
+| Martín Loyola | Product Owner, Technical Lead | 1.1 HU completa, 1.2 Instalacion y ejecucion, 1.3 GitHub workflow, 2.1 Modelo de dominio, 2.2 Diagrama de caso de uso, 2.3 Especificacion de HU | 
 | Jesús Carvajal | Scrum Master  | 2.4 Diagrama de estados, 3.1 Despliegue y componentes, 3.2 Diagrama de componentes, 3.3 Diagrama de secuencia, 4.1 Casos de prueba, 5.1 Deuda tecnica / Code smells |
 
