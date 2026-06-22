@@ -151,22 +151,24 @@ npm start
 ```
 El servidor quedará disponible en: http://localhost:3000
 
-## Endpoints disponibles
-
-## Ruta base
-- `GET /`
+## Endpoints principales
 
 ### Juegos
-- `GET /juegos`
-- `POST /juegos`
-- `PUT /juegos/:id`
-- `DELETE /juegos/:id`
+| Método | Ruta        | Descripción                      | 
+|--------|-------------|----------------------------------| 
+| GET    | /juegos     | Lista los videojuegos existentes |
+| POST   | /juegos     | Crea un videojuego               |
+| PUT    | /juegos/:id | Modifica un videojuego           |
+| DELETE | /juegos/:id | Elimina un videojuego            |
 
 ### Reseñas
-- `GET /resenas`
-- `POST /resenas`
-- `PUT /resenas/:id`
-- `DELETE /resenas/:id`
+| Método | Ruta         | Descripción                     | 
+|--------|--------------|---------------------------------| 
+| GET    | /resenas     | Lista las reseñas existentes    |
+| POST   | /resenas     | Crea una reseña                 |
+| PUT    | /resenas/:id | Modifica una reseña             |
+| DELETE | /resenas/:id | Elimina una reseña              |
+
 
 ## Ejemplo de body para crear un juego
 ```json
