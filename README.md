@@ -194,7 +194,7 @@ El servidor quedará disponible en: http://localhost:3000
 ## Pruebas
 Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó guardada junto al proyecto.
 
-#Evidencia de GitHub workflow
+## Evidencia de GitHub workflow
 | Elemento | Evidencia |
 |------------|-----------|
 | Rama principal | main |
