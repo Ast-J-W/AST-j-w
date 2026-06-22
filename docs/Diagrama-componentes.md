@@ -1,4 +1,4 @@
-# Diagrama de Componentes
+# Diagrama de Componentes con dependencias e interfaces
 
 ```mermaid id="u0digq"
 flowchart LR
