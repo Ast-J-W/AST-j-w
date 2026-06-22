@@ -117,27 +117,39 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 - better-sqlite3
 - Bruno (Debido a una dificultad con el problema Thunder Client)
 
-## Instalación
-1. Clonar el repositorio.
-2. Abrir la carpeta del proyecto.
-3. Ejecutar:
+## Instrucciones de instalación y ejecución
 
-```bash
-npm install
-```
+### Requisitos previos
+
+- Node.js instalado.
+- npm instalado.
+- Git instalado.
+  
+1. Clonar el repositorio
+   - git clone https://github.com/Ast-J-W/AST-j-w.git
+2. Entrar a la carpeta del proyecto
+
+   ```bash
+   cd AST-j-w
+   ```
+4. Entrar al backend:
+
+   ```bash
+   cd backend
+   ```
+5. Instalar dependencias:
+
+   ```bash
+   npm install
+   ```
 
 ## Ejecución
 Para iniciar el servidor:
 
 ```bash
-node index.js
-```
-
-También se puede usar:
-
-```bash
 npm start
 ```
+El servidor quedará disponible en: http://localhost:3000
 
 ## Endpoints disponibles
 
