@@ -154,6 +154,14 @@ npm start
 ```
 El servidor quedará disponible en: http://localhost:3000
 
+### Instalación y ejecución (con Docker)
+
+Si el repositorio incluye `docker-compose.yml`, el levantamiento se realiza con:
+
+```bash
+docker-compose up --build
+```
+
 ## Endpoints principales
 
 ### Juegos
