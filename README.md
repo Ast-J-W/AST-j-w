@@ -152,7 +152,7 @@ Para iniciar el servidor:
 ```bash
 npm start
 ```
-El servidor quedará disponible en: http://localhost:3000
+El servidor quedará disponible en: http://localhost:3000 a menos que manualmente se modifique
 
 ### Instalación y ejecución (con Docker)
 
