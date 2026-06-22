@@ -127,6 +127,7 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 - npm instalado.
 - Git instalado.
   
+### Instalación  
 1. Clonar el repositorio
    - git clone https://github.com/Ast-J-W/AST-j-w.git
 2. Entrar a la carpeta del proyecto
@@ -134,18 +135,18 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
    ```bash
    cd AST-j-w
    ```
-4. Entrar al backend:
+3. Entrar al backend:
 
    ```bash
    cd backend
    ```
-5. Instalar dependencias:
+4. Instalar dependencias:
 
    ```bash
    npm install
    ```
 
-## Ejecución
+### Ejecución
 Para iniciar el servidor:
 
 ```bash
