@@ -141,6 +141,9 @@ API backend desarrollada con Node.js, Express y SQLite para gestionar juegos y r
 - Node.js instalado.
 - npm instalado.
 - Git instalado.
+
+### Nota sobre la base de datos
+Si existe un archivo previo `datos.db` con una estructura antigua, se recomienda eliminarlo antes de ejecutar `npm start` para que SQLite regenere las tablas correctas.
   
 ### Instalación  
 1. Clonar el repositorio
@@ -219,14 +222,15 @@ docker-compose up --build
 Las pruebas de los endpoints fueron realizadas con Bruno y la colección quedó guardada junto al proyecto.
 
 ## Evidencia de GitHub workflow
-| Elemento | Evidencia |
-|------------|-----------|
-| Rama principal | main |
-| Rama de desarrollo | US-08-resenas |
-| Rama de pruebas | feature/pruebas-api |
-| Pull Requests | Cambios integrados mediante Pull Requests |
-| Integración final | La versión evaluable se encuentra en la rama main 
+El desarrollo se organizó con una rama de trabajo para la historia implementada y la versión final fue integrada en `main`.  
+Se deja registro de la estructura esperada del flujo de trabajo y de la entrega final del proyecto en la rama principal.
 
+| Elemento | Estado |
+|----------|--------|
+| Rama principal | `main` |
+| Rama de desarrollo | `US-08-resenas` |
+| Pull Request | Pendiente de adjuntar evidencia |
+| Integración final | Proyecto entregado en `main` |
 ## Responsabilidades del equipo 
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 

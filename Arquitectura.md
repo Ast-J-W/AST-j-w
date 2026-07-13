@@ -64,3 +64,22 @@ Esta descomposición permite relacionar las funcionalidades del sistema con los 
 | Módulo de Reseñas | El módulo de Reseñas permite que los usuarios registrados publiquen comentarios y calificaciones sobre videojuegos. Este módulo fortalece la participación de la comunidad, ya que permite compartir opiniones públicas sobre los títulos disponibles en la plataforma.|
 | Módulo de Feedback | El módulo de Feedback permite que los usuarios registrados envíen sugerencias o comentarios orientados a mejorar los videojuegos disponibles, el catálogo o la experiencia general de la plataforma. A diferencia de las reseñas, el feedback no se enfoca necesariamente en una opinión pública, sino en recopilar información útil para la evolución del sistema y del catálogo. |
 | Módulo de Soporte Técnico | El módulo de Soporte Técnico permite que los usuarios registrados creen y consulten solicitudes de soporte relacionadas con su cuenta, biblioteca, compras o funcionamiento general de la plataforma. Este módulo responde a la necesidad de brindar atención a problemas reportados por los usuarios y mantener una experiencia de uso más confiable. |
+
+## 4. Diagrama de Despliegue
+El sistema se despliega de forma local con una separación simple entre cliente, servidor backend y base de datos. El usuario interactúa desde un navegador o una herramienta de pruebas como Bruno, las solicitudes son recibidas por un servidor backend desarrollado con Node.js y Express, y la información se almacena en una base de datos SQLite en el archivo `datos.db`.
+
+```mermaid
+flowchart TD
+    U[Usuario]
+    C[Cliente Web / Bruno / Navegador]
+    S[Servidor Backend Node.js + Express]
+    DB[(SQLite - datos.db)]
+
+    U --> C
+    C -->|HTTP / JSON| S
+    S -->|Consultas e inserciones SQL| DB
+```
+
+El despliegue propuesto es coherente con la implementación actual del proyecto, ya que el backend está desarrollado con Node.js y Express, expone endpoints HTTP como /juegos y /resenas, y utiliza SQLite mediante better-sqlite3 para persistir datos en el archivo local datos.db. Esta estructura permite una solución simple y funcional para el alcance del proyecto, facilitando instalación, ejecución local y pruebas de la API.
+
+

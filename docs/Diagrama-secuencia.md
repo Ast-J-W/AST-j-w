@@ -48,3 +48,4 @@ sequenceDiagram
         end
     end
 ```
+El diagrama de secuencia representa el flujo de publicación de una reseña en la historia de usuario US-08. Se observa cómo el usuario ingresa los datos, el cliente envía la solicitud POST /resenas, la API valida los campos obligatorios y la calificación, verifica que el videojuego exista y que no haya duplicidad, y finalmente registra la reseña en la base de datos o devuelve el error correspondiente.
