@@ -1,0 +1,18 @@
+info:
+  name: DELETE - Eliminar juego inexistente
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:3000/juegos/9999
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
